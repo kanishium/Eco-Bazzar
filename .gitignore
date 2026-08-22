@@ -1,0 +1,16 @@
+# Ignore ALL node_modules folders anywhere
+node_modules/
+**/node_modules/
+
+# Ignore ALL environment files
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Build folders
+dist/
+build/
+
+# Logs
+*.log

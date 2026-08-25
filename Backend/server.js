@@ -14,6 +14,9 @@ app.get("/", (req, res) => {
     res.send("hello server this side")
 })
 
+
+const PORT = process.env.PORT || 3000;
+
 // GET all products
 app.get("/products", async (req, res) => {
     try {
@@ -64,6 +67,6 @@ app.post("/add-product", async (req, res) => {
     }
 })
 
-app.listen(3000, () => {
-    console.log("the server is running at port 3000");
+app.listen(PORT, () => {
+    console.log(`the server is running at port ${PORT}`);
 })

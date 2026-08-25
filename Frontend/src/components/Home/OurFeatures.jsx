@@ -39,8 +39,7 @@ export default function OurFeatures() {
                 const data = await response.json();
                 // Take up to 8 products for the featured section
                 const products = data.slice(0, 8);
-                console.log(products)
-                setFeaturedProducts(data);
+                setFeaturedProducts(products);
                 // Auto-select the first product if available
                 if (products.length > 0) {
                     setSelectedProductId(products[0]._id);

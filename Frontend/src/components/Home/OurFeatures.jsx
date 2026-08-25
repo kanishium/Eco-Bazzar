@@ -30,19 +30,19 @@ export default function OurFeatures() {
     const [featuredProducts, setFeaturedProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [selectedProductId, setSelectedProductId] = useState(null);
-
+    const apiURL = import.meta.env.VITE_API_URL;
     // Fetch products from the backend DB
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch("http://localhost:3000/products");
+                const response = await fetch(`${apiURL}/products`);
                 const data = await response.json();
                 // Take up to 8 products for the featured section
-                const products = data.slice(0, 8);
-                setFeaturedProducts(products);
+                // const products = data.slice(0, 8);
+                setFeaturedProducts(data);
                 // Auto-select the first product if available
-                if (products.length > 0) {
-                    setSelectedProductId(products[0]._id);
+                if (data.length > 0) {
+                    setSelectedProductId(data[0]._id);
                 }
             } catch (error) {
                 console.log("Error fetching featured products:", error);

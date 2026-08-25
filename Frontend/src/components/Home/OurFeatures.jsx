@@ -38,11 +38,12 @@ export default function OurFeatures() {
                 const response = await fetch(`${apiURL}/products`);
                 const data = await response.json();
                 // Take up to 8 products for the featured section
-                // const products = data.slice(0, 8);
+                const products = data.slice(0, 8);
+                console.log(products)
                 setFeaturedProducts(data);
                 // Auto-select the first product if available
-                if (data.length > 0) {
-                    setSelectedProductId(data[0]._id);
+                if (products.length > 0) {
+                    setSelectedProductId(products[0]._id);
                 }
             } catch (error) {
                 console.log("Error fetching featured products:", error);

@@ -16,10 +16,11 @@ function Product() {
   };
 
   // Fetch products from backend API
+  const apiURL = import.meta.env.VITE_API_URL;
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:3000/products");
+        const response = await fetch(`${apiURL}/products`);
         const data = await response.json();
         setProducts(data);
       } catch (error) {

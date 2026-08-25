@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import tote from "../../assets/Testimonials/Organic Cotton Tote.webp"
-import crossbody from "../../assets/Testimonials/Eco Travel Crossbody.webp"
-import desk from "../../assets/Testimonials/Bamboo Desk Organizer.webp"
-import bottle from "../../assets/Testimonials/Reusable Steel Bottle.webp"
+import tote from "../../assets/Testimonials/Organic Cotton Tote.png"
+import crossbody from "../../assets/Testimonials/Eco Travel Crossbody.png"
+import desk from "../../assets/Testimonials/Bamboo Desk Organizer.png"
+import bottle from "../../assets/Testimonials/Reusable Steel Bottle.png"
 const testimonials = [
     {
         id: 1,
@@ -139,11 +139,11 @@ export default function Testimonials() {
                                             </div>
 
                                             <div className="relative z-10 mt-8 flex flex-col justify-end sm:mt-0">
-                                                <div className="flex justify-center">
+                                                <div className="flex justify-center ">
                                                     <img
                                                         src={item.productImage}
                                                         alt={item.productName}
-                                                        className="h-32 w-full bg-red-400 object-contain sm:h-40"
+                                                        className="h-32 w-full  object-contain sm:h-40"
                                                     />
                                                 </div>
 

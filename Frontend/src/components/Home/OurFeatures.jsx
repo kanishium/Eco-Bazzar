@@ -96,7 +96,7 @@ export default function OurFeatures() {
                                 <span className="h-px w-12 bg-emerald-700/50" />
                             </div>
 
-                            <h2 className="font-serif text-3xl text-stone-950 sm:text-4xl">
+                            <h2 className="font-serif text-3xl  sm:text-4xl">
                                 Most Loved Eco Products
                             </h2>
                         </div>

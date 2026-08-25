@@ -329,8 +329,8 @@ function ShopPage() {
                       key={size}
                       onClick={() => setSelectedSize(size)}
                       className={`px-4 py-2 text-sm border rounded transition-all ${selectedSize === size
-                          ? "bg-cyan-900 text-white border-cyan-900"
-                          : "bg-white text-gray-700 border-gray-300 hover:border-cyan-400"
+                        ? "bg-cyan-900 text-white border-cyan-900"
+                        : "bg-white text-gray-700 border-gray-300 hover:border-cyan-400"
                         }`}
                     >
                       {size}

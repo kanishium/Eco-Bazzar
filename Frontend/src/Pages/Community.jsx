@@ -79,7 +79,7 @@ function Community() {
             changing conditions. By adopting innovative models and fostering
             collaboration, we aim to create a more hopeful future in the face of
             unprecedented environmental challenges and mitigate the assault on
-            our environment. 
+            our environment.
           </div>
         </div>
       </div>

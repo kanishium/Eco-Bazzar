@@ -38,7 +38,7 @@ function SideNavbar() {
   };
 
   return (
-    <>
+    <div className="sticky top-0 z-50">
       {/* ═══════════════════════════════════
           ██  ANNOUNCEMENT BAR
           ═══════════════════════════════════ */}
@@ -49,7 +49,7 @@ function SideNavbar() {
       {/* ═══════════════════════════════════
           ██  DESKTOP NAVBAR (md+)
           ═══════════════════════════════════ */}
-      <nav className="hidden md:flex w-full bg-white border-b border-gray-200 px-10 py-5 items-center justify-between sticky top-0 z-50">
+      <nav className="hidden md:flex w-full bg-white border-b border-gray-200 px-10 py-5 items-center justify-between">
         {/* Left - Nav Links */}
         <div className="flex items-center gap-8">
           {navLinks.map((item) => (
@@ -89,7 +89,7 @@ function SideNavbar() {
             <span>Search</span>
           </button>
           <button
-            onClick={() => navigate("/Product")}
+            onClick={() => navigate("/Cart")}
             className="text-gray-500 hover:text-cyan-900 transition-colors relative"
           >
             <FaShoppingBag size={17} />
@@ -109,7 +109,7 @@ function SideNavbar() {
       {/* ═══════════════════════════════════
           ██  MOBILE NAVBAR (below md)
           ═══════════════════════════════════ */}
-      <div className="md:hidden flex w-full bg-white border-b border-gray-200 px-4 py-3 items-center justify-between sticky top-0 z-50">
+      <div className="md:hidden flex w-full bg-white border-b border-gray-200 px-4 py-3 items-center justify-between">
         {/* Hamburger */}
         <button
           onClick={() => setIsOpen(true)}
@@ -214,7 +214,7 @@ function SideNavbar() {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

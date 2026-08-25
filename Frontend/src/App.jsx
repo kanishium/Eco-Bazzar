@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import SideNavbar from "./components/SideNavbar";
 import Bottombar from "./components/Bottombar";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+
 const Home = React.lazy(() => import("./Pages/Home"));
 const About = React.lazy(() => import("./Pages/About"));
 const Community = React.lazy(() => import("./Pages/Community"));
@@ -11,6 +12,7 @@ const Payment = React.lazy(() => import("./Pages/Payment"));
 const Privacy = React.lazy(() => import("./Pages/Privacy"));
 const Product = React.lazy(() => import("./Pages/Product"));
 const Search = React.lazy(() => import("./Pages/Search"));
+const Cart = React.lazy(() => import("./Pages/Cart"));
 const ShopPage = React.lazy(() => import("./Pages/ShopPage"));
 
 function AppRoutes() {
@@ -32,6 +34,7 @@ function AppRoutes() {
           <Route path="/Privacy" element={<Privacy />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/Search" element={<Search />} />
+          <Route path="/Cart" element={<Cart />} />
           <Route path="/Shoppage/:id" element={<ShopPage />} />
         </Routes>
       </Suspense>

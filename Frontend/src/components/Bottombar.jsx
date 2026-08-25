@@ -20,7 +20,7 @@ function Bottombar() {
       {/* ═══════════════════════════════════
           ██  DISCOUNT BANNER
           ═══════════════════════════════════ */}
-      <div className="mx-8 md:mx-20 ">
+      <div className="mx-8 pt-8 md:mx-20 ">
         <div className="bg-[#6b7c5e] flex  flex-col md:flex-row items-center justify-between px-8 md:px-16 py-10 md:py-14">
           <div className="mb-6 md:mb-0">
             <h2 className="text-white text-3xl md:text-4xl font-yatra leading-tight">
